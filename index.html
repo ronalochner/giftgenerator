@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gift JavaScript</title>
+	<meta name="Author" content="Rona Lochner"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1>Gift Generation Request</h1>
+        <p>Simple gift generator based on age and sex</p>
+        <hr>
+    </header>
+    <section>
+        <article>
+            <p class="order-form">
+                <label for="sex"><h4>PICK GENDER</h4></label>
+                <select name="sex" id="sexSelector">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <label for="age"><H4>PICK AGE GROUP</H4></label>
+                <select name="age" id="ageSelector">
+                    <option value="20-30">20-30 years old</option>
+                    <option value="30-40">30-40 years old</option>
+                    <option value="40-50">40-50 years old</option>
+                    <option value="50-60">50-60 years old</option>
+                </select>
+                <br>
+                <br>
+                <a href="#" id="submitOrder" class="btn btn-submit">REQUEST</a>
+            </p>
+            <p class="results hidden" id="giftResults"></p>
+        </article>
+    </section>
+    <script type="text/javascript" src="js/gift-builder.js"></script>
+</body>
+</html>
